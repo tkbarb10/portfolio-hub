@@ -7,4 +7,4 @@ Welcome to my portfolio! I am currently pursuing my Master's in Applied Data Sci
 An NLP project involving web scraping and sentiment classification of political threads.
 
 ---
-[View my Resume](./resume.pdf) | [LinkedIn](www.linkedin.com/in/taylor-kirk-61879435)
+[View my Resume](./Main%20Resume.pdf) | [LinkedIn](www.linkedin.com/in/taylor-kirk-61879435)
