@@ -3,7 +3,7 @@ Welcome to my portfolio! A mantra that has guided my life (implicitly for most o
 
 ## Featured Projects
 
-### What's in a Review?
+### What's in a Review?  
   [Project Code](https://github.com/tkbarb10/ADS_505_Project.git)  
   [Link to App](https://tkbarb10-ads505-app.hf.space)  
 
