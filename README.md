@@ -10,6 +10,7 @@ Welcome to my portfolio! A mantra that has guided my life (implicitly for most o
 
 ### What's in a Review?  
 **[Project Code](https://github.com/tkbarb10/ADS_505_Project.git) | [Link to App](https://tkbarb10-ads505-app.hf.space)**  
+
 The primary problem addressed in this project is: "What characteristics make an Amazon product review helpful?" By leveraging large-scale review datasets, the project seeks to identify linguistic, structural, and contextual features that correlate with helpfulness votes. We had two goals with this project: 
 
 * **1)** Develop predictive models to identify reviews most likely to be found helpful  
