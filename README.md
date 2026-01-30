@@ -11,6 +11,6 @@ The primary problem addressed in this project is: "What characteristics make an 
 
 - 1) Develop predictive models to identify reviews most likely to be found helpful  
 - 2) Use topic modeling to understand how helpful review characteristics differ by category and rating.  
-We hope this helps users write better reviews and enables companies to highlight valuable feedback and gain insights for product or system improvements.
+We hope this helps users write better reviews and enables companies to highlight valuable feedback and gain insights for product or system improvements.  I've linked to the project code and the app above.  The app walks through the highlights of the project and allows you to upload your own data to explore and use our model on as well.
 ---
 [View my Resume](./Main%20Resume.pdf) | [LinkedIn](www.linkedin.com/in/taylor-kirk-61879435)
