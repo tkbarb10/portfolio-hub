@@ -17,3 +17,14 @@ The primary problem addressed in this project is: "What characteristics make an 
 * **2)** Use topic modeling to understand how helpful review characteristics differ by category and rating.  
 
 We hope this helps users write better reviews and enables companies to highlight valuable feedback and gain insights for product or system improvements. I've linked to the project code and the app above. The app walks through the highlights of the project and allows you to upload your own data to explore and use our model on as well.  
+
+### Global Warming Trajectories
+**[Project Code](https://github.com/tkbarb10/ADS506-Final-Project.git)**  
+
+This project explores the link between anthropogenic CO₂ emissions and global temperature change. It combines historical climate data, statistical time-series models, and an interactive Shiny application that lets users test emission scenarios and see their projected temperature impacts. The `code_notebook.qmd` document outlines the exploratory data analysis (EDA) and modeling workflow, and our final report with key findings and limitations is in the final report pdf file.  
+
+**Key Findings**  
+
+- Lagged CO₂ concentration and an ENSO variable emerged as the strongest predictors of temperature change
+- The optimal ARIMA(1, 0, 1)(0, 1, 2) model achieved strong predictive accuracy (RMSE = 0.1356) with minimal residual autocorrelation (Ljung-Box p = 0.513)
+- Scenario forecasts used a simplified ARIMA(1, 1, 1)(0, 1, 1) model with 1-year lagged emissions and 4-month lagged ENSO index for improved stability
