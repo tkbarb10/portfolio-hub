@@ -28,3 +28,5 @@ This project explores the link between anthropogenic CO₂ emissions and global 
 - Lagged CO₂ concentration and an ENSO variable emerged as the strongest predictors of temperature change
 - The optimal ARIMA(1, 0, 1)(0, 1, 2) model achieved strong predictive accuracy (RMSE = 0.1356) with minimal residual autocorrelation (Ljung-Box p = 0.513)
 - Scenario forecasts used a simplified ARIMA(1, 1, 1)(0, 1, 1) model with 1-year lagged emissions and 4-month lagged ENSO index for improved stability
+
+### The Vision Turing Test
