@@ -1,0 +1,25 @@
+---
+---
+
+@import "jekyll-theme-cayman";
+
+.page-nav {
+  margin-top: 1.5rem;
+
+  a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    margin: 0 0.85rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+
+    &:hover,
+    &.active {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+  }
+}

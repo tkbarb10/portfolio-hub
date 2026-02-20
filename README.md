@@ -30,7 +30,7 @@ This project explores the link between anthropogenic CO₂ emissions and global 
 - Scenario forecasts used a simplified **ARIMA(1, 1, 1)(0, 1, 1)** model with `1-year lagged emissions` and `4-month lagged ENSO index` for improved stability
 
 ### The Vision Turing Test
-**[Project Code](https://github.com/tkbarb10/Image-Classification-504.git)** 
+**[Project Code](https://github.com/tkbarb10/Image-Classification-504.git)**  
 **[Dataset Path](https://huggingface.co/datasets/tkbarb10/ADS504-Image-Arrays)**
 
 Given the rapid adoption of Generative AI, we thought it prudent to explore methods for distinguishing AI generated images from human generated images.  This project sourced images from 2 **Hugging Face Repositories** and the open source **Open Images** dataset from Google Research.  A total of **15k** images were used, evenly split between human and AI generated.  Three traditional machine learning models were pit against the **EfficientNetB0** CNN model available on Tensorflow in a series of experiments to determine the best methods for Gen AI detection.  The paper on our findings is found inside the repository as well as the notebook containing the full code used in this project.  The CNN model training notebook has been separated into it's own notebook for an easier switch to a GPU kernel
