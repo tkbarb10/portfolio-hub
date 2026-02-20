@@ -25,8 +25,21 @@ This project explores the link between anthropogenic CO₂ emissions and global 
 
 **Key Findings**  
 
-- Lagged CO₂ concentration and an ENSO variable emerged as the strongest predictors of temperature change
-- The optimal ARIMA(1, 0, 1)(0, 1, 2) model achieved strong predictive accuracy (RMSE = 0.1356) with minimal residual autocorrelation (Ljung-Box p = 0.513)
-- Scenario forecasts used a simplified ARIMA(1, 1, 1)(0, 1, 1) model with 1-year lagged emissions and 4-month lagged ENSO index for improved stability
+- `Lagged CO`₂ concentration and an `ENSO` variable emerged as the strongest predictors of temperature change
+- The optimal **ARIMA(1, 0, 1)(0, 1, 2)** model achieved strong predictive accuracy (**RMSE** = 0.1356) with minimal residual autocorrelation (**Ljung-Box** p = 0.513)
+- Scenario forecasts used a simplified **ARIMA(1, 1, 1)(0, 1, 1)** model with `1-year lagged emissions` and `4-month lagged ENSO index` for improved stability
 
 ### The Vision Turing Test
+**[Project Code](https://github.com/tkbarb10/Image-Classification-504.git)** 
+**[Dataset Path](https://huggingface.co/datasets/tkbarb10/ADS504-Image-Arrays)**
+
+Given the rapid adoption of Generative AI, we thought it prudent to explore methods for distinguishing AI generated images from human generated images.  This project sourced images from 2 **Hugging Face Repositories** and the open source **Open Images** dataset from Google Research.  A total of **15k** images were used, evenly split between human and AI generated.  Three traditional machine learning models were pit against the **EfficientNetB0** CNN model available on Tensorflow in a series of experiments to determine the best methods for Gen AI detection.  The paper on our findings is found inside the repository as well as the notebook containing the full code used in this project.  The CNN model training notebook has been separated into it's own notebook for an easier switch to a GPU kernel
+
+**Key Findings**
+
+- Best performing model was a tuned Random Forest model trained on engineered features from image data (such as edge density, edge entropy, height, width, etc).  **Accuracy was 92.3%** and an **AUC of ~97%**
+- AI images showed a **wider range across the RGB channels** suggesting they might be more vibrant than human generated images
+- AI images showed **lower contrast**, meaning their edges often appeared flatter and more pronounced
+
+Check out the app to classify your own images!
+**[Image Classifier](https://image-classification-504.streamlit.app/)**
