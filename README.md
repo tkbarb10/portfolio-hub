@@ -4,6 +4,7 @@ title: My Third Oath
 description: Data Scientist | Masters in Applied Data Science
 resume: ./Main%20Resume.pdf
 linkedin: https://www.linkedin.com/in/taylor-kirk-61879435
+permalink: /
 ---
 
 Welcome to my portfolio! A mantra that has guided my life (implicitly for most of it, explicitly within the last couple years) is **"leverage your curiosity."** I realized my job at the time wasn't cutting it, so I left, hoping that a life immersed in data and technology might scratch the itch. I'm finishing my Masters in Applied Data Science now and so far I'd say it's lived up to the hype! This portfolio hosts a combination of school and personal projects that I've enjoyed most. I'd welcome any collaboration, feedback or ideas for future projects.
