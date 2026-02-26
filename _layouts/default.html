@@ -16,12 +16,20 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <nav class="page-nav">
         <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Portfolio</a>
         <a href="{{ '/interesting_reads' | relative_url }}"{% if page.url contains 'interesting_reads' %} class="active"{% endif %}>Interesting Reads</a>
       </nav>
+
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+
+      {% if page.resume or page.linkedin %}
+        <div class="header-links">
+          {% if page.resume %}<a href="{{ page.resume }}" class="btn">View Resume</a>{% endif %}
+          {% if page.linkedin %}<a href="{{ page.linkedin }}" class="btn" target="_blank">LinkedIn</a>{% endif %}
+        </div>
+      {% endif %}
     </header>
 
     <main id="content" class="main-content" role="main">

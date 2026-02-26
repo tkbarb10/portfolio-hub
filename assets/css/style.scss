@@ -3,14 +3,20 @@
 
 @import "jekyll-theme-cayman";
 
+.page-header {
+  position: relative;
+}
+
 .page-nav {
-  margin-top: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
 
   a {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
-    margin: 0 0.85rem;
-    font-size: 1rem;
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
     font-weight: 600;
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
