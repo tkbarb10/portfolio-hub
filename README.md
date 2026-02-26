@@ -35,6 +35,23 @@ The primary problem addressed in this project is: "What characteristics make an 
 
 We hope this helps users write better reviews and enables companies to highlight valuable feedback and gain insights for product or system improvements. I've linked to the project code and the app above. The app walks through the highlights of the project and allows you to upload your own data to explore and use our model on as well.  
 
+## BYO RAG
+**[Publication Link](https://app.readytensor.ai/publications/nlp-tutor-rag-assistant-fmuQRFYCeAg0)**
+**[Project Code](https://github.com/tkbarb10/ai_essentials_rag)**
+
+I built this RAG pipeline for a certification through [Ready Tensor](https://app.readytensor.ai/). The `Gradio` interface lets users chat with a bot connected to a vector store built from a textbook I had for school, but the repository is designed to be fully modular.  Users can upload their own sources and modify prompts, or use the built-in web scraping module to pull content from any site they have access to.
+
+### Tech Stack
+
+**Web Scraping**
+- `Tavily Web API` builds a URL map and pulls content from target links
+- `Groq` LLM cleans stray HTML, removes duplicates, and organizes content into Markdown sections
+
+**RAG Pipeline**
+- LangChain Markdown splitter for automatic metadata extraction; Recursive splitter for chunking remaining sections
+- `Chroma DB` vector store with `Gemma-300m` embeddings
+- `Groq` service provider for chat, defaulting to `GPT-oss-20b`
+
 ## Global Warming Trajectories
 **[Project Code](https://github.com/tkbarb10/ADS506-Final-Project.git)**  
 
