@@ -1,13 +1,13 @@
 ---
 layout: default
-title: My Third Oath
-description: Data Scientist | Masters in Applied Data Science
+title: Taylor Kirk's Portfolio
+description: Highlights from my learning journey
 resume: ./Main%20Resume.pdf
 linkedin: https://www.linkedin.com/in/taylor-kirk-61879435
 permalink: /
 ---
 
-Welcome to my portfolio! A mantra that has guided my life (implicitly for most of it, explicitly within the last couple years) is **"leverage your curiosity."** I realized my job at the time wasn't cutting it, so I left, hoping that a life immersed in data and technology might scratch the itch. I'm finishing my Masters in Applied Data Science now and so far I'd say it's lived up to the hype! This portfolio hosts a combination of school and personal projects that I've enjoyed most. I'd welcome any collaboration, feedback or ideas for future projects.
+Welcome to my portfolio! A mantra that has guided my life (implicitly for most of it, explicitly within the last couple years) is **"leverage your curiosity."** I realized my job at the time wasn't cutting it, so I left, hoping that a life immersed in data and technology might scratch the itch. I'm finishing my Masters in Applied Data Science at University of San Diego (USD) now and so far I'd say it's lived up to the hype! This portfolio hosts a combination of school and personal projects that I've enjoyed most, and reflect the skill set I've had the opportunity to develop as USD.  I'd welcome any collaboration, feedback or ideas for future projects.
 
 ---
 
@@ -25,6 +25,12 @@ In this project, we set out to see if we could understand social media commentar
 - Final **f1_macro** score on the holdout set was **78.17%**
 - The `Opinion` label was most commonly misclassified — predicted as `Argumentative` **15%** of the time and `Expressive` **11%** of the time, suggesting these boundaries could be more cleanly defined in the labeling schema
 
+### Use Cases
+
+- Political campaigns can use this model to better understand the dominant discourse style of a platform and match the tone of their messaging to how people on that platform actually communicate
+- Political media and journalists can track how discourse type around a politician or news event shifts over time, informing the stories they write and encouraging follow-up on past headlines
+- Social media platforms can use this model to monitor how their design choices affect the discourse on their platform, and adjust recommendation systems, add and/or remove features in response
+
 ## What's in a Review?  
 **[Project Code](https://github.com/tkbarb10/ADS_505_Project.git) | [Link to App](https://tkbarb10-ads505-app.hf.space)**  
 
@@ -34,6 +40,12 @@ The primary problem addressed in this project is: "What characteristics make an 
 - Use topic modeling to understand how helpful review characteristics differ by category and rating.  
 
 We hope this helps users write better reviews and enables companies to highlight valuable feedback and gain insights for product or system improvements. I've linked to the project code and the app above. The app walks through the highlights of the project and allows you to upload your own data to explore and use our model on as well.  
+
+### Use Cases
+
+- Retail companies that feature products on Amazon can use this to identify comments with a high helpfulness score and elevate them to the top of product pages
+- Sellers and product teams can use the topic modeling component to identify what customers consistently highlight in the most helpful reviews by category, revealing what actually matters to buyers in that space and where product descriptions may be falling short
+- Reviewers can use this to enhance their reviews by revealing the features that predict helpfulness (length, structure, specific wording), giving writers concrete feedback for improving their reviews rather than a simple score
 
 ## BYO RAG
 **[Publication Link](https://app.readytensor.ai/publications/nlp-tutor-rag-assistant-fmuQRFYCeAg0)**
@@ -51,6 +63,11 @@ I built this RAG pipeline for a certification through [Ready Tensor](https://app
 - LangChain Markdown splitter for automatic metadata extraction; Recursive splitter for chunking remaining sections
 - `Chroma DB` vector store with `Gemma-300m` embeddings
 - `Groq` service provider for chat, defaulting to `GPT-oss-20b`
+
+### Use Cases
+
+- Students can upload textbooks or course material to ask questions, particularly ones that seek to connect concepts across chapters, which are hard to surface by searching or skimming
+- Companies can combine the scraping modules and web access with their own source material to implement a chatbot that can interact with customers answer their questions with grounding in the companies own documentation
 
 ## Global Warming Trajectories
 **[Project Code](https://github.com/tkbarb10/ADS506-Final-Project.git)**  
