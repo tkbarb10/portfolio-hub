@@ -18,4 +18,7 @@ I started down the data science path later in life, so my understanding of linea
 Several RAG techniques with full explanations and code, fun read, even more fun to experiment with
 
 - [Code is Cheap](https://nadh.in/blog/code-is-cheap/)  
-Motivating read for me to focus more on leveling up my code game
+Motivating read for me to focus more on leveling up my code game  
+
+- [Maintenance Phase](https://every.to/p/i-hired-an-ai-to-do-my-chores-now-i-maintain-the-ai)  
+I typically hate maintaining anything but this article made me rethink the importance and power of maintenance  
