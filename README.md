@@ -14,7 +14,7 @@ Welcome to my portfolio! A mantra that has guided my life (implicitly for most o
 # Featured Projects
 
 ## Reinforcement Learning for Early ICU Intervention
-**[Project Code](https://github.com/tkbarb10/ADS599-Capstone)** 
+**[Project Code](https://github.com/tkbarb10/ADS599-Capstone)**  
 **[Live Dashboard](https://huggingface.co/spaces/ADS599-Capstone/Clinical_Support_Decision_Tool)**
 
 Every year, thousands of hospitalized patients deteriorate from complications that were either missed or caught too late, a phenomenon known as *failure to rescue*. The problem is compounded by an overburdened system: staffing shortages, limited bed capacity, and rising ED volume leave clinical staff with less time and attention for each patient. This project explores whether a reinforcement learning agent can learn to surface deterioration signals earlier than a human provider, reducing cognitive load without replacing clinical judgment.
@@ -51,7 +51,7 @@ In this project, we set out to see if we could understand social media commentar
 - Social media platforms can use this model to monitor how their design choices affect the discourse on their platform, and adjust recommendation systems, add and/or remove features in response
 
 ## What's in a Review?  
-**[Project Code](https://github.com/tkbarb10/ADS_505_Project.git)**
+**[Project Code](https://github.com/tkbarb10/ADS_505_Project.git)**  
 **[Link to App](https://tkbarb10-ads505-app.hf.space)**  
 
 The primary problem addressed in this project is: "What characteristics make an Amazon product review helpful?" By leveraging large-scale review datasets, the project seeks to identify linguistic, structural, and contextual features that correlate with helpfulness votes. We had two goals with this project: 
@@ -87,7 +87,7 @@ This project explores the link between anthropogenic CO₂ emissions and global 
 
 ## The Vision Turing Test
 **[Project Code](https://github.com/tkbarb10/Image-Classification-504.git)**  
-**[Dataset Path](https://huggingface.co/datasets/tkbarb10/ADS504-Image-Arrays)**
+**[Dataset Path](https://huggingface.co/datasets/tkbarb10/ADS504-Image-Arrays)**  
 **[Image Classifier App](https://image-classification-504.streamlit.app/)**
 
 Given the rapid adoption of Generative AI, we thought it prudent to explore methods for distinguishing AI generated images from human generated images.  This project sourced images from 2 Hugging Face Repositories and the open source **Open Images** dataset from Google Research.  A total of **15k** images were used, evenly split between human and AI generated.  Three traditional machine learning models were pit against the **EfficientNetB0** CNN model available on Tensorflow in a series of experiments to determine the best methods for Gen AI detection.  The paper on our findings is found inside the repository as well as the notebook containing the full code used in this project.  The CNN model training notebook has been separated into it's own notebook for an easier switch to a GPU kernel  
@@ -105,7 +105,7 @@ Given the rapid adoption of Generative AI, we thought it prudent to explore meth
 - Digital forensics and legal teams can use the model's feature-based approach to establish a basis for challenging image authenticity in court
 
 ## BYO RAG
-**[Publication Link](https://app.readytensor.ai/publications/nlp-tutor-rag-assistant-fmuQRFYCeAg0)**
+**[Publication Link](https://app.readytensor.ai/publications/nlp-tutor-rag-assistant-fmuQRFYCeAg0)**  
 **[Project Code](https://github.com/tkbarb10/ai_essentials_rag)**
 
 I built this RAG pipeline for a certification through [Ready Tensor](https://app.readytensor.ai/). The `Gradio` interface lets users chat with a bot connected to a vector store built from a textbook I had for school, but the repository is designed to be fully modular.  Users can upload their own sources and modify prompts, or use the built-in web scraping module to pull content from any site they have access to.
