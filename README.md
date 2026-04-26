@@ -13,6 +13,25 @@ Welcome to my portfolio! A mantra that has guided my life (implicitly for most o
 
 # Featured Projects
 
+## Reinforcement Learning for Early ICU Intervention
+**[Project Code](https://github.com/tkbarb10/ADS599-Capstone)** 
+**[Live Dashboard](https://huggingface.co/spaces/ADS599-Capstone/Clinical_Support_Decision_Tool)**
+
+Every year, thousands of hospitalized patients deteriorate from complications that were either missed or caught too late, a phenomenon known as *failure to rescue*. The problem is compounded by an overburdened system: staffing shortages, limited bed capacity, and rising ED volume leave clinical staff with less time and attention for each patient. This project explores whether a reinforcement learning agent can learn to surface deterioration signals earlier than a human provider, reducing cognitive load without replacing clinical judgment.
+
+Using the [MIMIC-IV](https://mimic.mit.edu/docs/about/) dataset (~396K ED stays), we built a two-stage pipeline:
+
+1. **Sequence modeling** — An LSTM trained on the full temporal sequence of each ED stay predicts ICU transfer vs. discharge, producing calibrated transfer-likelihood estimates at each clinical event.
+2. **Offline RL policy** — Those event-level estimates feed a reward function for a Conservative Q-Learning (CQL) agent, trained on historical data to recommend appropriate care escalation and earlier ICU transfer
+
+The result is framed as a *clinical decision support* tool: it surfaces a signal, not a verdict. Any deployment would require prospective validation and clinical oversight.
+
+### Key Findings
+
+- The LSTM achieved an **F1 of 0.93** on ICU transfer prediction and a **PR-AUC of 0.98**, establishing a strong and reliable foundation for the downstream reward signal
+- On held-out stays where the policy reached a terminal recommendation, it achieved an **F1 macro of 0.85** and flagged ICU transfer a median of **4 clinical events earlier** than the treating provider
+- Terminal recommendation coverage remains an open challenge.  The current reward function leads to conservative behavior in ambiguous trajectories, and improving coverage without sacrificing precision is the primary direction for future work
+
 ## Sentiment Analysis for Political Discourse
 **[Project Code](https://github.com/aprilchia/ADS-509_LLM)**  
 **[HuggingFace Dataset](https://huggingface.co/datasets/ADS509/full_experiment_labels)**  
@@ -32,7 +51,8 @@ In this project, we set out to see if we could understand social media commentar
 - Social media platforms can use this model to monitor how their design choices affect the discourse on their platform, and adjust recommendation systems, add and/or remove features in response
 
 ## What's in a Review?  
-**[Project Code](https://github.com/tkbarb10/ADS_505_Project.git) | [Link to App](https://tkbarb10-ads505-app.hf.space)**  
+**[Project Code](https://github.com/tkbarb10/ADS_505_Project.git)**
+**[Link to App](https://tkbarb10-ads505-app.hf.space)**  
 
 The primary problem addressed in this project is: "What characteristics make an Amazon product review helpful?" By leveraging large-scale review datasets, the project seeks to identify linguistic, structural, and contextual features that correlate with helpfulness votes. We had two goals with this project: 
 

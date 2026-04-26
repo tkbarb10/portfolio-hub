@@ -8,6 +8,9 @@ description: Articles and posts I've found worth sharing
 
 A collection of articles, papers, and posts I've come across that I think are worth reading.
 
+- [Effective AI Applications in Medicine](https://m.youtube.com/watch?v=rNDjdqzSdtY&time_continue=1&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fappliedaisummit.org%2F)[RAG in Healthcare Applications](https://youtu.be/gQUC0au1RSA)  
+Both of these talks are from the [Applied AI Summit](https://appliedaisummit.org/).  I found them to be impactful, no fluff, and were honest about the limitations of AI and the importance of being forward about patient safety and the clinical staff experience  
+
 - [Is AI Homogenizing our Thoughts](https://www.newyorker.com/culture/infinite-scroll/ai-is-homogenizing-our-thoughts?utm_source=facebook&utm_medium=social&utm_campaign=dhfacebook&utm_content=app.dashsocial.com/newyorkermag/library/media/546600666)  
 A timely read.  The author makes the point that over reliance on AI pulls our thoughts and ideas to the center
 
