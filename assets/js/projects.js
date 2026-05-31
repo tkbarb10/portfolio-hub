@@ -11,6 +11,8 @@
      mediaType  — "image" or "placeholder"
      mediaFile  — path from site root (e.g. "assets/images/rag.jpg")
                   set to null when mediaType is "placeholder"
+     imageFit   — (optional) "contain" to show the full image without cropping
+                  omit or set to "cover" for the default fill behaviour
      snippet    — 1-2 sentence card description
      stats      — array of { label, value } shown as chips; empty [] to omit
      codeUrl    — GitHub URL; null to hide the Code button
@@ -120,8 +122,9 @@ function renderProjectCards(containerId) {
     // Media slot
     var mediaHtml;
     if (project.mediaType === 'image' && project.mediaFile) {
+      var fitStyle = project.imageFit === 'contain' ? ' style="object-fit:contain"' : '';
       mediaHtml = '<div class="card-media">' +
-        '<img src="' + project.mediaFile + '" alt="' + escHtml(project.title) + '" loading="lazy">' +
+        '<img src="' + project.mediaFile + '" alt="' + escHtml(project.title) + '" loading="lazy"' + fitStyle + '>' +
         '</div>';
     } else {
       mediaHtml = '<div class="card-media">' +

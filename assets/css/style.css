@@ -622,6 +622,21 @@ section {
   object-fit: cover;
 }
 
+/* Use on detail pages where the full image should render at natural size */
+.detail-media--natural {
+  max-height: none;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-media--natural img,
+.detail-media--natural video {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .detail-media .media-placeholder {
   height: 300px;
   border-radius: var(--card-radius);
