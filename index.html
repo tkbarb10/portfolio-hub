@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="clean">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Taylor Kirk — Applied Data Science portfolio. Projects in NLP, RL, computer vision, and time series.">
+  <title>Taylor Kirk — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- themes.js runs first to prevent flash of wrong theme -->
+  <script src="./assets/js/themes.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="./index.html">Taylor Kirk</a>
+    <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="./index.html" class="active">Portfolio</a></li>
+      <li><a href="./reads.html">Reads</a></li>
+      <li><a href="./writing.html">Writing</a></li>
+      <li><button class="theme-toggle">Light</button></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="hero section-alt-a">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <h1 class="hero-name">Taylor Kirk</h1>
+          <p class="hero-tagline">Highlights from my learning journey</p>
+          <p class="hero-bio">
+            A mantra that has guided my life is &ldquo;leverage your curiosity.&rdquo;
+            I realized my job at the time wasn&rsquo;t cutting it, so I left &mdash; hoping
+            a life immersed in data and technology might scratch the itch. I&rsquo;m
+            finishing my Masters in Applied Data Science at the University of San Diego
+            and so far it&rsquo;s lived up to the hype. This portfolio hosts school and
+            personal projects I&rsquo;ve enjoyed most, reflecting the skills I&rsquo;ve had
+            the opportunity to develop.
+          </p>
+          <div class="hero-buttons">
+            <a href="./Main%20Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">View Resume</a>
+            <a href="https://www.linkedin.com/in/taylor-kirk-61879435" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-accent-block">
+            <div class="hero-accent-content">
+              <div class="hero-accent-label">University of San Diego</div>
+              <div class="hero-accent-title">Applied<br>Data Science</div>
+              <div class="hero-accent-divider"></div>
+              <div class="hero-accent-stats">
+                <div class="hero-accent-stat"><strong>6</strong> Featured Projects</div>
+                <div class="hero-accent-stat">NLP &middot; Reinforcement Learning</div>
+                <div class="hero-accent-stat">Computer Vision &middot; Time Series</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section class="projects-section section-alt-b">
+      <div class="container">
+        <h2 class="section-heading">Projects</h2>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Taylor Kirk &middot; <a href="https://github.com/tkbarb10" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="./assets/js/projects.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>renderProjectCards('projects-grid');</script>
+
+</body>
+</html>

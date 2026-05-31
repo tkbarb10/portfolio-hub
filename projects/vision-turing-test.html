@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="clean">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Vision Turing Test — AI vs human image classification — Taylor Kirk">
+  <title>The Vision Turing Test — Taylor Kirk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="../assets/js/themes.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="detail-page">
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="../index.html">Taylor Kirk</a>
+    <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="active">Portfolio</a></li>
+      <li><a href="../reads.html">Reads</a></li>
+      <li><a href="../writing.html">Writing</a></li>
+      <li><button class="theme-toggle">Light</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <a class="detail-back" href="../index.html">&#8592; Back to Portfolio</a>
+
+      <article>
+        <div class="detail-domain-tag">Computer Vision &middot; Classification</div>
+        <h1 class="detail-title">The Vision Turing Test</h1>
+
+        <div class="detail-media">
+          <div class="media-placeholder">Computer Vision &middot; Classification</div>
+        </div>
+
+        <div class="detail-metrics">
+          <span class="stat-chip">Accuracy: 92.3%</span>
+          <span class="stat-chip">AUC: ~97%</span>
+          <span class="stat-chip">15k Images</span>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Overview</h2>
+          <p>
+            Given the rapid adoption of generative AI, this project explores methods for distinguishing AI-generated images from human-generated images. Images were sourced from two Hugging Face repositories and the open-source <strong>Open Images</strong> dataset from Google Research &mdash; a total of <strong>15,000 images</strong>, evenly split between human and AI generated.
+          </p>
+          <p>
+            Three traditional machine learning models were pitted against the <strong>EfficientNetB0</strong> CNN to determine the best approach for generative AI detection. The paper on findings and the full code notebook are included in the repository, with the CNN training separated into its own notebook for easy GPU kernel switching.
+          </p>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Key Findings</h2>
+          <ul>
+            <li>Best performing model: a tuned <strong>Random Forest trained on engineered image features</strong> (edge density, edge entropy, height, width, color statistics). Accuracy was <strong>92.3%</strong> with an <strong>AUC of ~97%</strong>.</li>
+            <li>AI images showed a <strong>wider range across RGB channels</strong>, suggesting they may be more vibrant than human-generated images.</li>
+            <li>AI images showed <strong>lower contrast</strong> &mdash; their edges appeared flatter and more pronounced, a signal the engineered features could reliably capture.</li>
+            <li>EfficientNetB0 underperformed the feature-engineered Random Forest, suggesting that hand-crafted spectral and edge features are more discriminative than learned CNN representations for this specific task.</li>
+          </ul>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Use Cases</h2>
+          <ul>
+            <li>Social media platforms can use this model to flag AI-generated images, helping maintain content authenticity and reduce the spread of synthetic misinformation.</li>
+            <li>Fact-checkers and investigative journalists can run suspect images through the classifier as one signal in verifying whether visual evidence in a story has been manipulated or fabricated.</li>
+            <li>Digital forensics and legal teams can use the model&rsquo;s feature-based approach to establish a basis for challenging image authenticity in court.</li>
+          </ul>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Tech Stack</h2>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TensorFlow / Keras</span>
+            <span class="tech-tag">EfficientNetB0</span>
+            <span class="tech-tag">scikit-learn</span>
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Hugging Face Datasets</span>
+          </div>
+        </div>
+
+        <div class="detail-links fade-in-up">
+          <a href="https://github.com/tkbarb10/Image-Classification-504.git" class="btn btn-secondary" target="_blank" rel="noopener">View Code</a>
+          <a href="https://image-classification-504.streamlit.app/" class="btn btn-primary" target="_blank" rel="noopener">Live App</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Taylor Kirk &middot; <a href="https://github.com/tkbarb10" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

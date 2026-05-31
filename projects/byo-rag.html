@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="clean">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BYO RAG — Modular retrieval-augmented generation pipeline — Taylor Kirk">
+  <title>BYO RAG — Taylor Kirk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="../assets/js/themes.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="detail-page">
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="../index.html">Taylor Kirk</a>
+    <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="active">Portfolio</a></li>
+      <li><a href="../reads.html">Reads</a></li>
+      <li><a href="../writing.html">Writing</a></li>
+      <li><button class="theme-toggle">Light</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <a class="detail-back" href="../index.html">&#8592; Back to Portfolio</a>
+
+      <article>
+        <div class="detail-domain-tag">NLP &middot; RAG Pipeline</div>
+        <h1 class="detail-title">BYO RAG</h1>
+
+        <div class="detail-media">
+          <img src="../assets/images/rag.jpg" alt="RAG King — modular RAG pipeline illustration">
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Overview</h2>
+          <p>
+            Built for a certification through <a href="https://app.readytensor.ai/" target="_blank" rel="noopener">Ready Tensor</a>, this is a fully modular RAG pipeline. The Gradio interface lets users chat with a bot connected to a vector store built from a course textbook, but the repository is designed to be swapped out at every layer.
+          </p>
+          <p>
+            Users can upload their own source documents, modify prompts, or use the built-in web scraping module to pull content from any site they have access to. The pipeline was built to be a learning tool and a reusable template &mdash; not a one-off demo.
+          </p>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Tech Stack</h2>
+
+          <h3 style="margin-bottom: 0.5rem; margin-top: 1rem; color: var(--text-2); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.07em;">Web Scraping</h3>
+          <div class="tech-stack" style="margin-bottom: 1.25rem;">
+            <span class="tech-tag">Tavily Web API</span>
+            <span class="tech-tag">Groq LLM</span>
+          </div>
+
+          <h3 style="margin-bottom: 0.5rem; color: var(--text-2); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.07em;">RAG Pipeline</h3>
+          <div class="tech-stack" style="margin-bottom: 1.25rem;">
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">Chroma DB</span>
+            <span class="tech-tag">Gemma-300m Embeddings</span>
+            <span class="tech-tag">Groq (GPT-oss-20b)</span>
+          </div>
+
+          <h3 style="margin-bottom: 0.5rem; color: var(--text-2); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.07em;">Interface</h3>
+          <div class="tech-stack">
+            <span class="tech-tag">Gradio</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Use Cases</h2>
+          <ul>
+            <li>Students can upload textbooks or course material to ask questions &mdash; particularly ones that seek to connect concepts across chapters, which are hard to surface by searching or skimming.</li>
+            <li>Companies can combine the scraping modules and web access with their own documentation to implement a customer-facing chatbot grounded in their own content.</li>
+            <li>Developers can use the repository as a template for any RAG application, swapping sources, embedding models, and LLM providers with minimal changes.</li>
+          </ul>
+        </div>
+
+        <div class="detail-links fade-in-up">
+          <a href="https://github.com/tkbarb10/ai_essentials_rag" class="btn btn-secondary" target="_blank" rel="noopener">View Code</a>
+          <a href="https://app.readytensor.ai/publications/nlp-tutor-rag-assistant-fmuQRFYCeAg0" class="btn btn-primary" target="_blank" rel="noopener">Publication</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Taylor Kirk &middot; <a href="https://github.com/tkbarb10" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

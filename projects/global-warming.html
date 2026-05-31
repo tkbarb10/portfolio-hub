@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="clean">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Global Warming Trajectories — ARIMA time series and emissions simulator — Taylor Kirk">
+  <title>Global Warming Trajectories — Taylor Kirk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="../assets/js/themes.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="detail-page">
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="../index.html">Taylor Kirk</a>
+    <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="active">Portfolio</a></li>
+      <li><a href="../reads.html">Reads</a></li>
+      <li><a href="../writing.html">Writing</a></li>
+      <li><button class="theme-toggle">Light</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <a class="detail-back" href="../index.html">&#8592; Back to Portfolio</a>
+
+      <article>
+        <div class="detail-domain-tag">Time Series &middot; Climate</div>
+        <h1 class="detail-title">Global Warming Trajectories</h1>
+
+        <div class="detail-media">
+          <div class="media-placeholder">Time Series &middot; Climate</div>
+        </div>
+
+        <div class="detail-metrics">
+          <span class="stat-chip">RMSE: 0.1356</span>
+          <span class="stat-chip">Ljung-Box p: 0.513</span>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Overview</h2>
+          <p>
+            This project explores the link between anthropogenic CO&#x2082; emissions and global temperature change. It combines historical climate data, statistical time-series models, and an interactive Shiny application that lets users test emission scenarios and see their projected temperature impacts.
+          </p>
+          <p>
+            The modeling workflow &mdash; EDA, feature engineering, ARIMA model selection &mdash; is documented in a Quarto notebook. A final report with key findings and limitations is included in the repository.
+          </p>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Key Findings</h2>
+          <ul>
+            <li><strong>Lagged CO&#x2082; concentration</strong> and an <strong>ENSO variable</strong> emerged as the strongest predictors of temperature change.</li>
+            <li>The optimal <strong>ARIMA(1,&thinsp;0,&thinsp;1)(0,&thinsp;1,&thinsp;2)</strong> model achieved strong predictive accuracy (<strong>RMSE = 0.1356</strong>) with minimal residual autocorrelation (<strong>Ljung-Box p = 0.513</strong>).</li>
+            <li>Scenario forecasts used a simplified <strong>ARIMA(1,&thinsp;1,&thinsp;1)(0,&thinsp;1,&thinsp;1)</strong> model with 1-year lagged emissions and 4-month lagged ENSO index for improved stability across user-defined scenarios.</li>
+          </ul>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Use Cases</h2>
+          <ul>
+            <li>Policymakers can use the emissions simulator to evaluate the projected temperature impact of different emissions standards before committing to policy.</li>
+            <li>Climate educators can run live &ldquo;what if&rdquo; scenarios in the classroom, letting students see how emission choices play out in temperature projections over time.</li>
+            <li>Journalists and science communicators can use the scenario forecasts to ground climate reporting in quantitative projections rather than qualitative descriptions.</li>
+          </ul>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Tech Stack</h2>
+          <div class="tech-stack">
+            <span class="tech-tag">R</span>
+            <span class="tech-tag">ARIMA</span>
+            <span class="tech-tag">Shiny</span>
+            <span class="tech-tag">Quarto</span>
+            <span class="tech-tag">forecast</span>
+            <span class="tech-tag">ggplot2</span>
+            <span class="tech-tag">Posit Cloud</span>
+          </div>
+        </div>
+
+        <div class="detail-links fade-in-up">
+          <a href="https://github.com/tkbarb10/ADS506-Final-Project.git" class="btn btn-secondary" target="_blank" rel="noopener">View Code</a>
+          <a href="https://019cb702-576a-aa8a-89c2-63d369a2fbc2.share.connect.posit.cloud/" class="btn btn-primary" target="_blank" rel="noopener">Simulator App</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Taylor Kirk &middot; <a href="https://github.com/tkbarb10" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

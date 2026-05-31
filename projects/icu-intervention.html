@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="clean">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reinforcement Learning for Early ICU Intervention — Taylor Kirk">
+  <title>RL for ICU Intervention — Taylor Kirk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="../assets/js/themes.js"></script>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="detail-page">
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="../index.html">Taylor Kirk</a>
+    <button class="nav-hamburger" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="active">Portfolio</a></li>
+      <li><a href="../reads.html">Reads</a></li>
+      <li><a href="../writing.html">Writing</a></li>
+      <li><button class="theme-toggle">Light</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <a class="detail-back" href="../index.html">&#8592; Back to Portfolio</a>
+
+      <article>
+        <div class="detail-domain-tag">Healthcare &middot; Reinforcement Learning</div>
+        <h1 class="detail-title">Reinforcement Learning for Early ICU Intervention</h1>
+
+        <div class="detail-media">
+          <div class="media-placeholder">Healthcare &middot; Reinforcement Learning</div>
+        </div>
+
+        <div class="detail-metrics">
+          <span class="stat-chip">F1: 0.93</span>
+          <span class="stat-chip">PR-AUC: 0.98</span>
+          <span class="stat-chip">Events Earlier: 4</span>
+          <span class="stat-chip">F1 Macro (Policy): 0.85</span>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Overview</h2>
+          <p>
+            Every year, thousands of hospitalized patients deteriorate from complications that were either missed or caught too late &mdash; a phenomenon known as <em>failure to rescue</em>. The problem is compounded by an overburdened system: staffing shortages, limited bed capacity, and rising ED volume leave clinical staff with less time and attention for each patient.
+          </p>
+          <p>
+            This project explores whether a reinforcement learning agent can learn to surface deterioration signals earlier than a human provider, reducing cognitive load without replacing clinical judgment. Using the <strong>MIMIC-IV</strong> dataset (~396K ED stays), we built a two-stage pipeline: an LSTM for sequence modeling followed by an offline RL policy trained with Conservative Q-Learning (CQL).
+          </p>
+          <p>
+            The result is framed as a <em>clinical decision support</em> tool: it surfaces a signal, not a verdict. Any deployment would require prospective validation and clinical oversight.
+          </p>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Key Findings</h2>
+          <ul>
+            <li>The LSTM achieved an <strong>F1 of 0.93</strong> on ICU transfer prediction and a <strong>PR-AUC of 0.98</strong>, establishing a strong and reliable foundation for the downstream reward signal.</li>
+            <li>On held-out stays where the policy reached a terminal recommendation, it achieved an <strong>F1 macro of 0.85</strong> and flagged ICU transfer a median of <strong>4 clinical events earlier</strong> than the treating provider.</li>
+            <li>Terminal recommendation coverage remains an open challenge. The current reward function leads to conservative behavior in ambiguous trajectories &mdash; improving coverage without sacrificing precision is the primary direction for future work.</li>
+          </ul>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Use Cases</h2>
+          <ul>
+            <li>Clinical decision support tool that surfaces deterioration signals earlier, reducing the cognitive burden on nursing staff during high-volume shifts.</li>
+            <li>Research baseline for exploring offline RL in healthcare settings where prospective trials are costly or ethically complex.</li>
+            <li>Foundation for further work on coverage improvement and reward function design in safety-critical domains.</li>
+          </ul>
+        </div>
+
+        <div class="detail-section fade-in-up">
+          <h2>Tech Stack</h2>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">LSTM</span>
+            <span class="tech-tag">Conservative Q-Learning (CQL)</span>
+            <span class="tech-tag">MIMIC-IV</span>
+            <span class="tech-tag">scikit-learn</span>
+            <span class="tech-tag">Hugging Face Spaces</span>
+          </div>
+        </div>
+
+        <div class="detail-links fade-in-up">
+          <a href="https://github.com/tkbarb10/ADS599-Capstone" class="btn btn-secondary" target="_blank" rel="noopener">View Code</a>
+          <a href="https://huggingface.co/spaces/ADS599-Capstone/Clinical_Support_Decision_Tool" class="btn btn-primary" target="_blank" rel="noopener">Live Demo</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Taylor Kirk &middot; <a href="https://github.com/tkbarb10" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+
+</body>
+</html>
