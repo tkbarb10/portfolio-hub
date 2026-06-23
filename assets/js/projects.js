@@ -25,8 +25,8 @@ var PROJECTS = [
     id: 'icu-intervention',
     title: 'Reinforcement Learning for Early ICU Intervention',
     domain: 'Healthcare · Reinforcement Learning',
-    mediaType: 'placeholder',
-    mediaFile: null,
+    mediaType: 'video',
+    mediaFile: 'assets/images/capstone_animation.mp4',
     snippet: 'Exploring whether an RL agent can surface ICU deterioration signals earlier than a human provider, reducing cognitive load without replacing clinical judgment.',
     stats: [
       { label: 'F1', value: '0.93' },
@@ -125,6 +125,12 @@ function renderProjectCards(containerId) {
       var fitStyle = project.imageFit === 'contain' ? ' style="object-fit:contain"' : '';
       mediaHtml = '<div class="card-media">' +
         '<img src="' + project.mediaFile + '" alt="' + escHtml(project.title) + '" loading="lazy"' + fitStyle + '>' +
+        '</div>';
+    } else if (project.mediaType === 'video' && project.mediaFile) {
+      mediaHtml = '<div class="card-media">' +
+        '<video autoplay loop muted playsinline>' +
+        '<source src="' + project.mediaFile + '" type="video/mp4">' +
+        '</video>' +
         '</div>';
     } else {
       mediaHtml = '<div class="card-media">' +

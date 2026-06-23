@@ -434,6 +434,7 @@ section {
   height: 200px;
   overflow: hidden;
   flex-shrink: 0;
+  background: var(--bg-b);
 }
 
 .card-media img,
@@ -442,6 +443,10 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+.card-media video {
+  background: var(--bg-b);
 }
 
 .project-card:hover .card-media img,
