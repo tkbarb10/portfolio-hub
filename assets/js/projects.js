@@ -67,8 +67,8 @@ var PROJECTS = [
     id: 'global-warming',
     title: 'Global Warming Trajectories',
     domain: 'Time Series · Climate',
-    mediaType: 'placeholder',
-    mediaFile: null,
+    mediaType: 'video',
+    mediaFile: 'assets/images/earth_spinning.mp4',
     snippet: 'Linking anthropogenic CO₂ emissions to global temperature change with ARIMA models and an interactive emissions scenario simulator.',
     stats: [
       { label: 'RMSE', value: '0.1356' },
